@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Clock</title>
+</head>
+
+<body>
+    <main style="width: 500px; margin: 0 auto; margin-top: 20vh; font-family: sans-serif;">
+        <div style="text-align: center;">
+            <h1>Live Calender</h1>
+            <h2 id="calender"></h2>
+            <h2 id="clock"></h2>
+        </div>
+    </main>
+
+    <script>
+        const clock = document.getElementById('clock');
+        const calender = document.getElementById('calender');
+
+
+        const runTime = setInterval(function () {
+            calender.innerHTML = new Date().toLocaleDateString();
+            clock.innerHTML = new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+
+</html>

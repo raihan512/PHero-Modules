@@ -1,0 +1,17 @@
+.country {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: bisque;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.country h2,
+.country h3,
+.country h4,
+.country h5 {
+    margin: 0;
+}

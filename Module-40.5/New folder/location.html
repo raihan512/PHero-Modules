@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Api</title>
+</head>
+
+<body>
+
+    <h1 id="location"></h1>
+    <button onclick="showLocation()">See Location</button>
+
+    <script>
+        const locationStatus = document.getElementById('location');
+        const showLocation = () => {
+            const userPermission = confirm('Are you agree to sahre your location?');
+            console.log(userPermission);
+            if (userPermission) {
+                const myLocation = location.href;
+                locationStatus.textContent = myLocation;
+            } else {
+                locationStatus.textContent = "User don't want to show his location";
+            }
+        }
+    </script>
+</body>
+
+</html>

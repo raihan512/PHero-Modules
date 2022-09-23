@@ -1,0 +1,7 @@
+.country {
+    pad: 10px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+    margin: 10px 350px;
+}
